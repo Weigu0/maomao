@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PurrHaus is an international storefront for thoughtful cat furniture, feeders, toys, grooming essentials, and travel goods."
+    />
+    <title>PurrHaus | Premium Cat Supplies Worldwide</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="PurrHaus home">
+        <span class="brand-mark">P</span>
+        <span>PurrHaus</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#shop">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#shipping">Shipping</a>
+        <a href="#journal">Journal</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m21 21-4.7-4.7m2.2-5.3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" />
+          </svg>
+        </button>
+        <button class="cart-button" type="button" aria-label="Open cart" aria-controls="cartDrawer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 8h13l-1.4 8.2a2 2 0 0 1-2 1.7H9.2a2 2 0 0 1-2-1.6L5.7 5.8H3" />
+            <path d="M9.2 21h.1M16.8 21h.1" />
+          </svg>
+          <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Premium cat supplies">
+        <div class="hero-media"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Ships to 48 countries</p>
+          <h1>PurrHaus Cat Essentials</h1>
+          <p class="hero-copy">
+            Modern furniture, daily care, smart feeding, and playful enrichment for cats who own the home.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#shop">
+              <span>Shop Best Sellers</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" />
+              </svg>
+            </a>
+            <a class="secondary-button" href="#collections">Explore Collections</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Current offer">
+          <span>Spring drop</span>
+          <strong>15% off climbing trees and window perches</strong>
+          <small>Free global shipping on orders over $89</small>
+        </aside>
+      </section>
+
+      <section class="trust-strip" id="shipping" aria-label="Store benefits">
+        <div>
+          <strong>Worldwide delivery</strong>
+          <span>Tracked air and local courier handoff</span>
+        </div>
+        <div>
+          <strong>Vet-reviewed materials</strong>
+          <span>Low-odor finishes and washable fabrics</span>
+        </div>
+        <div>
+          <strong>30-day easy returns</strong>
+          <span>Regional return hubs in US, EU, and APAC</span>
+        </div>
+      </section>
+
+      <section class="section" id="collections">
+        <div class="section-heading">
+          <p class="eyebrow">Curated by behavior need</p>
+          <h2>Shop by collection</h2>
+        </div>
+        <div class="collection-grid">
+          <a class="collection-card tall" href="#shop">
+            <img
+              src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=900&q=80"
+              alt="Cat resting in a modern home"
+            />
+            <span>Cozy Living</span>
+          </a>
+          <a class="collection-card" href="#shop">
+            <img
+              src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=700&q=80"
+              alt="Cat watching from a perch"
+            />
+            <span>Climb & Scratch</span>
+          </a>
+          <a class="collection-card" href="#shop">
+            <img
+              src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&w=700&q=80"
+              alt="Cat beside feeding bowl"
+            />
+            <span>Feed & Hydrate</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section product-section" id="shop">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">International best sellers</p>
+            <h2>Designed for daily cat life</h2>
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="Product filters">
+            <button class="filter-tab active" type="button" data-filter="all">All</button>
+            <button class="filter-tab" type="button" data-filter="furniture">Furniture</button>
+            <button class="filter-tab" type="button" data-filter="care">Care</button>
+            <button class="filter-tab" type="button" data-filter="play">Play</button>
+          </div>
+        </div>
+
+        <div class="product-grid" aria-live="polite">
+          <article class="product-card" data-category="furniture">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80"
+                alt="Cat tree in a bright room"
+              />
+              <span class="badge">Best seller</span>
+            </div>
+            <div class="product-info">
+              <h3>Nordic Climb Tower</h3>
+              <p>Birch frame, sisal posts, washable lounge pads.</p>
+              <div class="product-row">
+                <strong>$129</strong>
+                <button class="add-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="care">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1606225457115-9b0de873c5db?auto=format&fit=crop&w=700&q=80"
+                alt="Cat grooming brush on soft fabric"
+              />
+              <span class="badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>SoftSheen Grooming Kit</h3>
+              <p>Deshedding comb, massage brush, nail file, pouch.</p>
+              <div class="product-row">
+                <strong>$34</strong>
+                <button class="add-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="play">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=700&q=80"
+                alt="Cat playing with a toy"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Hunt Mode Toy Set</h3>
+              <p>Feather wand, felt mice, rolling bell balls.</p>
+              <div class="product-row">
+                <strong>$22</strong>
+                <button class="add-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="care">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=700&q=80"
+                alt="Cat drinking near a bowl"
+              />
+            </div>
+            <div class="product-info">
+              <h3>QuietFlow Fountain</h3>
+              <p>Stainless basin, charcoal filter, USB-C pump.</p>
+              <div class="product-row">
+                <strong>$58</strong>
+                <button class="add-cart" type="button">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature-band">
+        <div class="feature-copy">
+          <p class="eyebrow">Built for global homes</p>
+          <h2>Compact packaging. Clear duties. Local support.</h2>
+          <p>
+            Every PurrHaus order includes HS code labeling, multi-language care cards, and regional plug options where electronics are included.
+          </p>
+        </div>
+        <div class="feature-metrics" aria-label="Store metrics">
+          <div><strong>4.8/5</strong><span>Average review score</span></div>
+          <div><strong>72h</strong><span>Average dispatch window</span></div>
+          <div><strong>18k+</strong><span>Cat homes served</span></div>
+        </div>
+      </section>
+
+      <section class="section journal-section" id="journal">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Care journal</p>
+            <h2>Better routines, calmer cats</h2>
+          </div>
+          <a class="text-link" href="#">View all articles</a>
+        </div>
+        <div class="journal-grid">
+          <article>
+            <img
+              src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=700&q=80"
+              alt="Cat looking at the camera"
+            />
+            <h3>How to introduce a new scratching post</h3>
+            <p>Placement, scent cues, and rewards that help cats switch habits.</p>
+          </article>
+          <article>
+            <img
+              src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=700&q=80"
+              alt="Cat resting by a window"
+            />
+            <h3>Choosing the right perch for small apartments</h3>
+            <p>Window height, load ratings, and washable textiles to compare.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="brand footer-brand" href="#">
+          <span class="brand-mark">P</span>
+          <span>PurrHaus</span>
+        </a>
+        <p>Premium cat supplies shipped worldwide from certified partner warehouses.</p>
+      </div>
+      <form class="newsletter">
+        <label for="email">Get global launch offers</label>
+        <div>
+          <input id="email" type="email" placeholder="Email address" required />
+          <button type="submit">Join</button>
+        </div>
+      </form>
+    </footer>
+
+    <div class="cart-backdrop" data-close-cart></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+      <div class="cart-drawer-header">
+        <div>
+          <p class="eyebrow">Your bag</p>
+          <h2 id="cartTitle">Cart</h2>
+        </div>
+        <button class="icon-button close-cart" type="button" aria-label="Close cart" data-close-cart>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Your cart is empty. Add a few cat essentials to start an order.</p>
+      </div>
+      <div class="cart-summary">
+        <div>
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0</strong>
+        </div>
+        <small>Shipping, duties, and regional taxes are calculated at checkout.</small>
+        <button class="checkout-button" type="button">Checkout</button>
+      </div>
+    </aside>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
